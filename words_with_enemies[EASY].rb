@@ -1,3 +1,9 @@
+=begin The challenge is to come up with the code given two words you eliminate letters in common at a ratio of 1 for 1 
+       and produce a set of letters that are left over from each word after colliding in mid air.
+       Which ever side has the most letters left over "wins".
+       If each side donates an equal amount of letters it is a "tie".
+=end
+
 def word_enemies(string_one, string_two)
 	long_string = (string_one + string_two).chars do |letter|
 		if(string_one.include?(letter) && string_two.include?(letter))
