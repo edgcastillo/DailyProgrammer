@@ -22,7 +22,13 @@ end
 
 puts "Welcome to Words with Enemies!"
 
-string_one = gets.chomp
-string_two = gets.chomp
+#string_one = gets.chomp Takes user input, not needed right now
+#string_two = gets.chomp
 
-puts word_enemies(string_one, string_two)
+puts word_enemies("because", "cause") # => Left side wins: be
+puts word_enemies("cat", "hat") # => It's a tie
+puts word_enemies("hello", "below") # => It's a tie
+puts word_enemies("hit", "miss") # => Right side wins: mss
+puts word_enemies("rekt", "pwn") # => Left side wins: rekt
+puts word_enemies("combo", "jumbo") # => It's a tie
+puts word_enemies("yakuza", "wizard") # => It's a tie
